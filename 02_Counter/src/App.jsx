@@ -12,14 +12,20 @@ function App() {
     // counter = counter + 1; 
     if(counter >= 20){
       setCounter(0);
-    }else{setCounter(counter + 1);}
+    }else{setCounter(c => c+1);
+      setCounter(c => c+1);
+      setCounter(c => c+1);
+      setCounter(c => c+1);
+      setCounter(c => c+1);}
     
   }
 
   const removeValue = () =>{
     if(counter <= 0){
       setCounter(0);
-    }else{setCounter(counter -1 );}
+    }else{
+      setCounter(counter -1 );
+    }
     
   }
   return (
